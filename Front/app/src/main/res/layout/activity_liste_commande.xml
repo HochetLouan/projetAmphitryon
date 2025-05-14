@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListeCommande">
+
+    <ImageView
+        android:id="@+id/imagesSIO"
+        android:layout_width="match_parent"
+        android:layout_height="178dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/bandeau"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ListView
+        android:id="@+id/listViewCommandes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="2dp"
+        app:layout_constraintTop_toBottomOf="@id/imagesSIO"/>
+
+    <Button
+        android:id="@+id/btnNewCommande"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="nouvelle commande"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/listViewCommandes"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

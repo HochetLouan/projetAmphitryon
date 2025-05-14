@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Back",
+			"path": "../Back"
+		},
+		{
+			"name": "vue",
+			"path": "../../DA5 - Web Mobile/androidPhp/vue"
+		}
+	],
+	"settings": {}
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommandeListAdapter">
+
+    <TextView
+        android:id="@+id/textView_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="idCommande"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/textView_etat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="etat"
+        app:layout_constraintStart_toEndOf="@+id/textView_id"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_id"/>
+
+    <TextView
+        android:id="@+id/textView_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="table"
+        app:layout_constraintStart_toEndOf="@+id/textView_etat"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_etat"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
